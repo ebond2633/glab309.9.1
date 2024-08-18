@@ -9,6 +9,13 @@
     <input type="file" name="file"/> <br/><br/>
     <button type="submit">Submit</button>
 </form>
+<h4>Upload Multiple Files:</h4>
+<form method="POST" th:action="@{/uploadFiles}" enctype="multipart/form-data">
+    <input type="file" name="files" multiple/> <br/><br/>
+    <button type="submit">Submit</button>
+</form>
+
+
 <hr/>
 
 <div th:if="${message}">
